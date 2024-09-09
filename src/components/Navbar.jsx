@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { AppBar, Toolbar, IconButton, Menu, MenuItem, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
@@ -44,9 +44,19 @@ const Navbar = () => {
               <MenuItem onClick={handleMenuClose}>
                 <Link to="/about" className="text-blue-500">About</Link>
               </MenuItem>
+
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/services" className="text-blue-500">Services</Link>
+                <Link to="/OurMember" className="text-blue-500">Our Member</Link>
               </MenuItem>
+
+              <MenuItem onClick={handleMenuClose}>
+                <Link to="/Contact" className="text-blue-500">Contact </Link>
+              </MenuItem>
+
+              {/* <MenuItem onClick={handleMenuClose}>
+                <Link to="/services" className="text-blue-500">Services</Link>
+              </MenuItem> */}
+            
             </Menu>
           </>
         ) : (
