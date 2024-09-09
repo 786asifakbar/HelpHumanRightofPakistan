@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { AppBar, Toolbar, IconButton, Menu, MenuItem, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "@mui/material";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
+// Tailwind CSS Styles
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [impactEl, setImpactEl] = useState(null);
@@ -27,12 +28,12 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" className="bg-blue-500">
-      <Toolbar className="flex justify-between">
+    <AppBar position="sticky" className="bg-red-600">
+      <Toolbar className="flex items-center justify-between px-4 py-2">
         {/* Logo */}
         <div className="flex items-center">
-          <img src="../../public/logo.png" alt="Logo" className="h-8 w-8 mr-2" />
-          <div className="text-2xl font-bold text-white">MyApp</div>
+          <img src="../../public/logo.png" alt="Logo" className="h-16 w-16 mr-2" />
+          <div className="text-white text-xl font-bold"></div>
         </div>
 
         {isMobile ? (
@@ -50,30 +51,25 @@ const Navbar = () => {
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
               onClose={handleMenuClose}
-              className="mt-12"
+              className="bg-white"
             >
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/" className="text-blue-500">Home</Link>
+                <Link to="/" className="text-blue-600">Home</Link>
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/about" className="text-blue-500">About</Link>
+                <Link to="/about" className="text-blue-600">About</Link>
               </MenuItem>
-              
-              {/* Our Impact dropdown in mobile */}
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/our-impact" className="text-blue-500">Our Impact</Link>
+                <Link to="/our-impact" className="text-blue-600">Our Impact</Link>
               </MenuItem>
-
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/our-members" className="text-blue-500">Our Members</Link>
+                <Link to="/our-members" className="text-blue-600">Our Members</Link>
               </MenuItem>
-
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/contact" className="text-blue-500">Contact</Link>
+                <Link to="/contact" className="text-blue-600">Contact</Link>
               </MenuItem>
-
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/donate" className="text-blue-500">Donate Now</Link>
+                <Link to="/donate" className="text-blue-600">Donate Now</Link>
               </MenuItem>
             </Menu>
           </>
@@ -85,8 +81,6 @@ const Navbar = () => {
             <Button color="inherit">
               <Link to="/about" className="text-white">About</Link>
             </Button>
-            
-            {/* Dropdown for Our Impact */}
             <div>
               <Button
                 color="inherit"
@@ -105,29 +99,25 @@ const Navbar = () => {
                 onClose={handleImpactClose}
               >
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="/impact/environment" className="text-blue-500">Environment</Link>
+                  <Link to="/impact/environment" className="text-blue-600">Environment</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="/impact/community" className="text-blue-500">Community</Link>
+                  <Link to="/impact/community" className="text-blue-600">Community</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="/impact/education" className="text-blue-500">Education</Link>
+                  <Link to="/impact/education" className="text-blue-600">Education</Link>
                 </MenuItem>
               </Menu>
             </div>
-
             <Button color="inherit">
               <Link to="/our-members" className="text-white">Our Members</Link>
             </Button>
             <Button color="inherit">
               <Link to="/contact" className="text-white">Contact</Link>
             </Button>
-
-            {/* Donate Now button */}
             <Button
               variant="contained"
-              color="secondary"
-              className="bg-red-500 text-white"
+              className="bg-red-600 text-white"
             >
               <Link to="/donate" className="text-white">Donate Now</Link>
             </Button>

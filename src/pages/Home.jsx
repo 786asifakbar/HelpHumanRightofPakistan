@@ -1,11 +1,13 @@
+import HeroSection from "./HeroSection";
 
 
 const Home = () => {
   return (
-    <div className="text-center mt-10">
-      <h1 className="text-4xl">Welcome to the Home Page</h1>
-    </div>
+    <>
+      <HeroSection/>
+
+    </>
   );
 }
 
-export default Home;
+export default Home
