@@ -1,5 +1,8 @@
 // src/components/HeroSection.js
 import TypingEffect from 'react-typing-effect';
+import ShadiMubark from './ShadiMubark';
+import FoodAid from './FoodAid';
+import HelpEducation from './HelpEducation';
 
 const HeroSection = () => {
   return (
@@ -10,7 +13,7 @@ const HeroSection = () => {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 lg:w-screen lg:h-full md:w-full md:h-screen sm:w-full sm:h-screen  object-cover"
+        className="absolute top-0 left-0 w-auto h-screen lg:w-screen lg:h-full md:w-full md:h-screen sm:w-full sm:h-screen  object-cover"
       >
         <source src="../../public/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -31,7 +34,7 @@ const HeroSection = () => {
             eraseSpeed={50}
             eraseDelay={2000}
             typingDelay={1000}
-            className=" font-medium text-4xl sm:text-4xl md:text-4xl lg:text-9xl xl:text-9xl"
+            className=" font-bold text-red-600 text-4xl sm:text-4xl md:text-4xl lg:text-7xl xl:text-9xl"
           />
           <p className="mt-4 text-lg md:text-xl">
         
@@ -39,6 +42,9 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
+    <ShadiMubark />
+    <FoodAid />
+    <HelpEducation/>
     </>
   );
 };

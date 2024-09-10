@@ -60,7 +60,10 @@ const Navbar = () => {
                 <Link to="/about" className="text-blue-600">About</Link>
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
+              
+              
                 <Link to="/our-impact" className="text-blue-600">Our Impact</Link>
+              
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
                 <Link to="/our-members" className="text-blue-600">Our Members</Link>
@@ -105,10 +108,21 @@ const Navbar = () => {
                   <Link to="/FoodAid" className="text-blue-600">FoodAid</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="/impact/education" className="text-blue-600">Education</Link>
+                  <Link to="HelpEducation" className="text-blue-600">Education</Link>
                 </MenuItem>
+                
+                <MenuItem onClick={handleImpactClose}>
+                  <Link to="Health" className="text-blue-600">Health</Link>
+                </MenuItem>
+                <MenuItem onClick={handleImpactClose}>
+                  <Link to="WaterPlant" className="text-blue-600">WaterPlant</Link>
+                </MenuItem>
+                
               </Menu>
+            
             </div>
+            
+            
             <Button color="inherit">
               <Link to="/our-members" className="text-white">Our Members</Link>
             </Button>

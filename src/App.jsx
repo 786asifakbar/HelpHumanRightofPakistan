@@ -6,7 +6,9 @@ import OurMember from './pages/OurMember';
 import Contact from "./pages/Contact"
 import ShadiMubark from './pages/ShadiMubark'
 import FoodAid from './pages/FoodAid';
-
+import HelpEducation from './pages/HelpEducation';
+import Health from './pages/Health';
+import WaterPlant from './pages/WaterPlant'
 
 const App = () => {
   return (
@@ -17,6 +19,11 @@ const App = () => {
           <Route path="/About" element={<About />} />
           <Route path="/ShadiMubark" element={<ShadiMubark />} />
           <Route path="/FoodAid" element={<FoodAid />} />
+          <Route path="/HelpEducation" element={<HelpEducation/>} />
+          <Route path="/Health" element={<Health/>} />
+          <Route path="/WaterPlant" element={<WaterPlant />} />
+          
+          
           <Route path="/OurMember" element={<OurMember />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
