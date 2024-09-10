@@ -69,7 +69,7 @@ const Navbar = () => {
                 <Link to="/contact" className="text-blue-600">Contact</Link>
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/donate" className="text-blue-600">Donate Now</Link>
+                <Link to="/donate" className="text-blue-600 bg-red-600 ">Donate Now</Link>
               </MenuItem>
             </Menu>
           </>
@@ -99,10 +99,10 @@ const Navbar = () => {
                 onClose={handleImpactClose}
               >
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="/impact/environment" className="text-blue-600">Environment</Link>
+                  <Link to="/shadiMubark" className="text-blue-600">Marraige Cermoney</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="/impact/community" className="text-blue-600">Community</Link>
+                  <Link to="/FoodAid" className="text-blue-600">FoodAid</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
                   <Link to="/impact/education" className="text-blue-600">Education</Link>

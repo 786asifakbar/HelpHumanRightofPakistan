@@ -3,34 +3,35 @@ import TypingEffect from 'react-typing-effect';
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <>
+    <div className="relative w-screen h-screen overflow-hidden">
       {/* Background Video */}
       <video
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 lg:w-screen lg:h-full md:w-full md:h-screen sm:w-full sm:h-screen  object-cover"
       >
-        <source src="your-video-file.mp4" type="video/mp4" />
+        <source src="../../public/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+      <div className="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-50"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
+      <div className="relative z-10 flex items-center justify-center h-screen text-center text-white">
         <div>
-          <h1 className="text-8xl md:text-6xl font-bold mb-4 bg-red-600 w-40 rounded-md">
-            HELP 
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-red-600 w-40 rounded-md">
+            
           </h1>
           <TypingEffect
-            text={['HUMAN', 'RIGHT','ORGINAZTION']}
+            text={['HELP HUMAN RIGHT ORGINAZTION']}
             speed={50}
             eraseSpeed={50}
             eraseDelay={2000}
             typingDelay={1000}
-            className="text-2xl md:text-4xl font-medium"
+            className=" font-medium text-4xl sm:text-4xl md:text-4xl lg:text-9xl xl:text-9xl"
           />
           <p className="mt-4 text-lg md:text-xl">
         
@@ -38,6 +39,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
