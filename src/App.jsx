@@ -9,6 +9,8 @@ import FoodAid from './pages/FoodAid';
 import HelpEducation from './pages/HelpEducation';
 import Health from './pages/Health';
 import WaterPlant from './pages/WaterPlant'
+import MedicineCharity from './pages/MedicineCharity';
+// import HelpJobBank from './pages/HelpJobBank'
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
           <Route path="/HelpEducation" element={<HelpEducation/>} />
           <Route path="/Health" element={<Health/>} />
           <Route path="/WaterPlant" element={<WaterPlant />} />
+          <Route path="/MedicineCharity" element={<MedicineCharity />} />
+          {/* <Route path="/HelpJobBank" element={<HelpJobBank/>} /> */}
           
           
           <Route path="/OurMember" element={<OurMember />} />

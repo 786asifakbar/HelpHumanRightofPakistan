@@ -117,7 +117,13 @@ const Navbar = () => {
                 <MenuItem onClick={handleImpactClose}>
                   <Link to="WaterPlant" className="text-blue-600">WaterPlant</Link>
                 </MenuItem>
-                
+                <MenuItem onClick={handleImpactClose}>
+                  <Link to="MedicineCharity" className="text-blue-600">MedicineCharity</Link>
+                </MenuItem>
+                {/* <MenuItem onClick={handleImpactClose}>
+                  <Link to="HelpJobBank" className="text-blue-600">HelpJobBank</Link>
+                </MenuItem>
+                 */}
               </Menu>
             
             </div>
