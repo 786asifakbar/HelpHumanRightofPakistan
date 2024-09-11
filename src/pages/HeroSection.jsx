@@ -3,6 +3,9 @@ import TypingEffect from 'react-typing-effect';
 import ShadiMubark from './ShadiMubark';
 import FoodAid from './FoodAid';
 import HelpEducation from './HelpEducation';
+import SuportPage from './SuportPage';
+
+
 
 const HeroSection = () => {
   return (
@@ -42,6 +45,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
+    <SuportPage />
     <ShadiMubark />
     <FoodAid />
     <HelpEducation/>

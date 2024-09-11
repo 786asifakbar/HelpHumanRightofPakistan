@@ -66,7 +66,7 @@ const Navbar = () => {
               
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/our-members" className="text-blue-600">Our Members</Link>
+                <Link to="/Ourmember" className="text-blue-600">Our Members</Link>
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
                 <Link to="/contact" className="text-blue-600">Contact</Link>
