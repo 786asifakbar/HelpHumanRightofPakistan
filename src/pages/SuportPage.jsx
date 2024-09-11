@@ -1,3 +1,4 @@
+import Carousel from "./Carousel";
 import PassPro from "./PassPro";
 import LeftPro from "./leftPro";
 
@@ -15,8 +16,12 @@ const SuportPage = () => {
         rep={``}
       />
     
+    
+    
+
+    
       <LeftPro 
-        imgsrc="../../public/waterplant.jpeg"
+        imgsrc="../../public/bg3.jpg"
         heading="Empowering Human Rights Organizations: Standing Together for Change"
         pera={`
         Logistical Support: We assist in organizing campaigns, protests, and relief efforts, ensuring that human rights organizations can operate effectively on the ground.
@@ -33,6 +38,7 @@ We invite you to join us in this critical mission—whether as a volunteer, dono
 
                `}
       />
+      <Carousel />
     </>
   );
 }

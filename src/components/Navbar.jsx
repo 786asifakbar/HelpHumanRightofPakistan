@@ -66,7 +66,7 @@ const Navbar = () => {
               
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/Ourmember" className="text-blue-600">Our Members</Link>
+                <Link to="/Ourmember" className="text-blue-600">Our Member</Link>
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
                 <Link to="/contact" className="text-blue-600">Contact</Link>
@@ -120,17 +120,17 @@ const Navbar = () => {
                 <MenuItem onClick={handleImpactClose}>
                   <Link to="MedicineCharity" className="text-blue-600">MedicineCharity</Link>
                 </MenuItem>
-                {/* <MenuItem onClick={handleImpactClose}>
+                <MenuItem onClick={handleImpactClose}>
                   <Link to="HelpJobBank" className="text-blue-600">HelpJobBank</Link>
                 </MenuItem>
-                 */}
+                
               </Menu>
             
             </div>
             
             
             <Button color="inherit">
-              <Link to="/our-members" className="text-white">Our Members</Link>
+              <Link to="/Ourmember" className="text-white">Our Members</Link>
             </Button>
             <Button color="inherit">
               <Link to="/contact" className="text-white">Contact</Link>
@@ -139,7 +139,7 @@ const Navbar = () => {
               variant="contained"
               className="bg-red-600 text-white"
             >
-              <Link to="/donate" className="text-white">Donate Now</Link>
+              <Link to="/DonationForm" className="text-white">Donate Now</Link>
             </Button>
           </div>
         )}

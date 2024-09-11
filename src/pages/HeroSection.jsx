@@ -26,18 +26,20 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-50"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center justify-center h-screen text-center text-white">
+      <div className="relative z-10 flex items-center text-left  h-screen  text-white">
         <div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-red-600 w-40 rounded-md">
+          {/* <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-red-600 w-40 rounded-md">
             
-          </h1>
+          </h1> */}
           <TypingEffect
             text={['HELP HUMAN RIGHT ORGINAZTION']}
             speed={50}
             eraseSpeed={50}
             eraseDelay={2000}
             typingDelay={1000}
-            className=" font-bold text-red-600 text-4xl sm:text-4xl md:text-4xl lg:text-7xl xl:text-9xl"
+            className="font-bold text-red-600 text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-7xl
+            space-y-96 ml-12
+            "
           />
           <p className="mt-4 text-lg md:text-xl">
         

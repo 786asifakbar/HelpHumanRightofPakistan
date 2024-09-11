@@ -10,7 +10,11 @@ import HelpEducation from './pages/HelpEducation';
 import Health from './pages/Health';
 import WaterPlant from './pages/WaterPlant'
 import MedicineCharity from './pages/MedicineCharity';
-// import HelpJobBank from './pages/HelpJobBank'
+import DonationForm from './pages/DonationForm';
+import HelpJobBank from './pages/HelpJobBank'
+// import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -25,13 +29,13 @@ const App = () => {
           <Route path="/Health" element={<Health/>} />
           <Route path="/WaterPlant" element={<WaterPlant />} />
           <Route path="/MedicineCharity" element={<MedicineCharity />} />
-          {/* <Route path="/HelpJobBank" element={<HelpJobBank/>} /> */}
+          <Route path="/HelpJobBank" element={<HelpJobBank/>} />
           
-          
+          <Route path="/DonationForm" element={<DonationForm />} />
           <Route path="/OurMember" element={<OurMember />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
-
+<Footer />
     </>
   );
 }
