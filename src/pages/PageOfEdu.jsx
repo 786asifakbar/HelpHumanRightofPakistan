@@ -1,9 +1,11 @@
 import LeftPro from "./leftPro"
+
+
 const MainLayout = () => {
   return (
 <> 
     <LeftPro 
-        imgsrc="../../public/edu 5.jpg"
+        imgsrc="../../public/edu5.jpg"
         heading="Educationa Must For Everyone"
         pera={`
             Education is a fundamental right, yet many students around the world face significant financial barriers that prevent them from accessing the learning opportunities they deserve. If you are one of these students, know that your dreams and aspirations are incredibly valuable, and your determination can open doors that may seem closed. Remember, there are numerous resources available, such as scholarships, grants, community programs, and online courses, designed to support individuals like you. Keep believing in yourself and stay persistent in your pursuit of knowledge. Reach out to mentors, educators, and organizations dedicated to helping students overcome financial challenges.

@@ -1,5 +1,5 @@
 // src/components/HeroSection.js
-import TypingEffect from 'react-typing-effect';
+// import TypingEffect from 'react-typing-effect';
 import ShadiMubark from './ShadiMubark';
 import FoodAid from './FoodAid';
 import HelpEducation from './HelpEducation';
@@ -31,7 +31,7 @@ const HeroSection = () => {
           {/* <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-red-600 w-40 rounded-md">
             
           </h1> */}
-          <TypingEffect
+          {/* <TypingEffect
             text={['HELP HUMAN RIGHT ORGINAZTION']}
             speed={50}
             eraseSpeed={50}
@@ -40,7 +40,7 @@ const HeroSection = () => {
             className="font-bold text-red-600 text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-7xl
             space-y-96 ml-12
             "
-          />
+          /> */}
           <p className="mt-4 text-lg md:text-xl">
         
           </p>

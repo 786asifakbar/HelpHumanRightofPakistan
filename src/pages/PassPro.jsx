@@ -15,7 +15,7 @@ const PassPro = (props) => {
       {/* Color overlay */}
       <div className="absolute inset-0 bg-gray-40 opacity-50"> </div> 
       <div className="lg:w-1/2  lg:pr-8"></div>
-            <h1 className="text-4xl  sm:text-5xl md:text-7xl lg:text-9xl xl:text-9xl font-bold pt-16 text-center text-black" data-aos="fade-down"
+            <h1 className="text-4xl  sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl font-bold pt-16 text-center text-black" data-aos="fade-down"
         data-aos-duration="3000">{props.title}</h1>
             <p className="text-lg text-black text-center ">
           
