@@ -1,29 +1,29 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { IconButton, Container } from '@mui/material';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 
 // Sample images (replace these with your own image URLs)
 const images = [
-  'https://via.placeholder.com/800x400?text=Work+1',
-  'https://via.placeholder.com/800x400?text=Work+2',
-  'https://via.placeholder.com/800x400?text=Work+3',
-  'https://via.placeholder.com/800x400?text=Work+4',
-  'https://via.placeholder.com/800x400?text=Work+5',
-  'https://via.placeholder.com/800x400?text=Work+6',
-  'https://via.placeholder.com/800x400?text=Work+7',
-  'https://via.placeholder.com/800x400?text=Work+8',
-  'https://via.placeholder.com/800x400?text=Work+9',
-  'https://via.placeholder.com/800x400?text=Work+10',
-  'https://via.placeholder.com/800x400?text=Work+11',
-  'https://via.placeholder.com/800x400?text=Work+12',
-  'https://via.placeholder.com/800x400?text=Work+13',
-  'https://via.placeholder.com/800x400?text=Work+14',
-  'https://via.placeholder.com/800x400?text=Work+15',
-  'https://via.placeholder.com/800x400?text=Work+16',
-  'https://via.placeholder.com/800x400?text=Work+17',
-  'https://via.placeholder.com/800x400?text=Work+18',
-  'https://via.placeholder.com/800x400?text=Work+19',
-  'https://via.placeholder.com/800x400?text=Work+20',
+  '../../public/bg1.jpg',
+  '../../public/bg2.jpg',
+  '../../public/bg3.jpg',
+  '../../public/bg4.jpg',
+  '../../public/edu4.jpg',
+  '../../public/edu5.jpg',
+  '../../public/donation4.jpg',
+  '../../public/img.jpg',
+  '../../public/img1.jpg',
+  '../../public/img2.jpg',
+  '../../public/orphan1.jpg',
+  '../../public/orphan2.jpg',
+  '../../public/img5.jpg',
+  '../../public/Legal Aid For All2.jpg',
+  '../../public/Legal Aid For All.jpg',
+  '../../public/img8.jpg',
+  '../../public/waterplant1.jpeg',
+  '../../public/img10.jpg',
+  '../../public/food.jpg',
+  '../../public/food2.jpg',
 ];
 
 const Carousel = () => {
@@ -38,6 +38,12 @@ const Carousel = () => {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
+
+  // Auto-slide effect
+  useEffect(() => {
+    const slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    return () => clearInterval(slideInterval); // Cleanup interval on component unmount
+  }, [currentIndex]);
 
   return (
     <Container maxWidth="lg" className="relative my-10">
@@ -80,5 +86,4 @@ const Carousel = () => {
     </Container>
   );
 };
-
 export default Carousel;

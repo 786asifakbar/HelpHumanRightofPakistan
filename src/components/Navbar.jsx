@@ -28,12 +28,12 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="sticky" className="bg-red-600">
+    <AppBar position="sticky" sx={{ backgroundColor: '#dc2626' }}> {/* Changed the color here */}
       <Toolbar className="flex items-center justify-between px-4 py-2">
         {/* Logo */}
         <div className="flex items-center">
-          <img src="../../public/logo.png" alt="Logo" className="h-16 w-16 mr-2" />
-          <div className="text-white text-xl font-bold"></div>
+          <img src="../../public/logo2.jpg" alt="Logo" className="h-22 w-20  rounded-lg" />
+          <div className="text-white text-2xl font-bold"></div>
         </div>
 
         {isMobile ? (
@@ -60,10 +60,7 @@ const Navbar = () => {
                 <Link to="/about" className="text-blue-600">About</Link>
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
-              
-              
                 <Link to="/our-impact" className="text-blue-600">Our Impact</Link>
-              
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
                 <Link to="/Ourmember" className="text-blue-600">Our Member</Link>
@@ -72,7 +69,7 @@ const Navbar = () => {
                 <Link to="/contact" className="text-blue-600">Contact</Link>
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/donate" className="text-blue-600 bg-red-600 ">Donate Now</Link>
+                <Link to="/DonatationForm" className="text-blue-600 bg-red-600">Donate Now</Link>
               </MenuItem>
             </Menu>
           </>
@@ -102,33 +99,29 @@ const Navbar = () => {
                 onClose={handleImpactClose}
               >
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="/shadiMubark" className="text-blue-600">Marraige Cermoney</Link>
+                  <Link to="/shadiMubark" className="text-blue-600">Marraige Ceremony</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="/FoodAid" className="text-blue-600">FoodAid</Link>
+                  <Link to="/FoodAid" className="text-blue-600">Food Aid</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
                   <Link to="HelpEducation" className="text-blue-600">Education</Link>
                 </MenuItem>
-                
                 <MenuItem onClick={handleImpactClose}>
                   <Link to="Health" className="text-blue-600">Health</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="WaterPlant" className="text-blue-600">WaterPlant</Link>
+                  <Link to="WaterPlant" className="text-blue-600">Water Plant</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="MedicineCharity" className="text-blue-600">MedicineCharity</Link>
+                  <Link to="MedicineCharity" className="text-blue-600">Medicine Charity</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
-                  <Link to="HelpJobBank" className="text-blue-600">HelpJobBank</Link>
+                  <Link to="HelpJobBank" className="text-blue-600">Help Job Bank</Link>
                 </MenuItem>
-                
               </Menu>
-            
             </div>
-            
-            
+
             <Button color="inherit">
               <Link to="/OurMember" className="text-white">Our Members</Link>
             </Button>
@@ -136,7 +129,7 @@ const Navbar = () => {
               <Link to="/contact" className="text-white">Contact</Link>
             </Button>
             <Button
-              variant="contained"
+              variant="contained "
               className="bg-red-600 text-white"
             >
               <Link to="/DonationForm" className="text-white">Donate Now</Link>

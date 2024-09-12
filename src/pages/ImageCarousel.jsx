@@ -1,25 +1,77 @@
-// src/ImageCarousel.js
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
+import 'swiper/swiper-bundle.css'; // Import Swiper styles
+import { Button } from '@mui/material';
+import { ArrowForward, ArrowBack } from '@mui/icons-material';
 
-const images = [
-  '../../public/edu 4.jpg',
-  '../../public/edu 5.jpg',
-  'https://media.istockphoto.com/id/1205946261/photo/elementary-school-children-in-classroom.jpg?s=612x612&w=0&k=20&c=Rm8C-52ZWyRlFiSDKQlWYHBP_g3admv6zgBm6PGyFnA=',
-  'https://media.istockphoto.com/id/1495037929/photo/happy-elementary-school-teacher-giving-high-five-to-her-student-during-class-in-the-classroom.jpg?s=612x612&w=0&k=20&c=Gn5Kqzd58Tr4sCu-9LKbvQSszJ6b9VmyFB21FOCCO98=',
-  'https://media.istockphoto.com/id/1497849854/photo/happy-elementary-students-raising-their-hands-to-answer-teachers-question-during-a-class-at.jpg?s=612x612&w=0&k=20&c=Uder-TToIURBcwVifYHOOkbl-1zyWff4uOYI52vKUgE=',
-];
-
+// Tailwind CSS Styles
 const ImageCarousel = () => {
   return (
-    <Swiper spaceBetween={10} slidesPerView={1} loop={true}>
-      {images.map((image, index) => (
-        <SwiperSlide key={index}>
-          <img src={image} alt={`Slide ${index}`} data-aos="fade-right"
-        data-aos-duration="3000" className="w-full h-full object-cover m-10"/>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-100">
+      <div className="w-full max-w-4xl mx-auto p-4">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          loop={true}
+          navigation={{
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+          }}
+          className="swiper-container"
+        >
+          <SwiperSlide>
+            <div className="flex items-center justify-center h-80 bg-blue-300 rounded-lg">
+              <img src="https://via.placeholder.com/600x400" alt="Slide 1" className="object-cover h-full w-full rounded-lg" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex items-center justify-center h-80 bg-blue-300 rounded-lg">
+              <img src="https://via.placeholder.com/600x400" alt="Slide 2" className="object-cover h-full w-full rounded-lg" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex items-center justify-center h-80 bg-blue-300 rounded-lg">
+              <img src="https://via.placeholder.com/600x400" alt="Slide 3" className="object-cover h-full w-full rounded-lg" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex items-center justify-center h-80 bg-blue-300 rounded-lg">
+              <img src="https://via.placeholder.com/600x400" alt="Slide 4" className="object-cover h-full w-full rounded-lg" />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+
+        {/* Navigation Buttons */}
+        <div className="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-4">
+          <Button
+            className="swiper-button-prev"
+            color="primary"
+            variant="contained"
+            startIcon={<ArrowBack />}
+          >
+            Prev
+          </Button>
+          <Button
+            className="swiper-button-next"
+            color="primary"
+            variant="contained"
+            endIcon={<ArrowForward />}
+          >
+            Next
+          </Button>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -1,8 +1,8 @@
 
-// import backgroundImage from '../images/Web-Icon.png'; // Replace with your background image path
-// import sectionImage from '../images/aboutBanner.jpg'; // Replace with your section image path
-// import ImageSlider from './ImageSlider';
-// import TwoPartitionContainer from './TwoPartitionContainer';
+//  import backgroundImage from '../images/Web-Icon.png'; // Replace with your background image path
+//  import sectionImage from '../images/aboutBanner.jpg'; // Replace with your section image path
+//  import ImageSlider from './ImageSlider';
+//  import TwoPartitionContainer from './TwoPartitionContainer';
 
 
 
@@ -15,7 +15,7 @@ const PassPro = (props) => {
       {/* Color overlay */}
       <div className="absolute inset-0 bg-gray-40 opacity-50"> </div> 
       <div className="lg:w-1/2  lg:pr-8"></div>
-            <h1 className="text-7xl font-bold pt-16 text-center text-black" data-aos="fade-down"
+            <h1 className="text-4xl  sm:text-5xl md:text-7xl lg:text-9xl xl:text-9xl font-bold pt-16 text-center text-black" data-aos="fade-down"
         data-aos-duration="3000">{props.title}</h1>
             <p className="text-lg text-black text-center ">
           
@@ -32,8 +32,10 @@ const PassPro = (props) => {
               {props.p}
             </p>
           </div>
-          <div className="lg:w-1/2 mt-8 lg:mt-0 ml-20">
-            <img src={props.secImg} alt="Section" className="min-w-72 min-h-80 rounded-lg shadow-xxl" data-aos="fade-left"
+          <div className="lg:w-1/2 mt-8 lg:mt-0">
+            <img src={props.secImg} alt="Section"
+            className="min-w-80 min-h-80 rounded-lg shadow-xxl" 
+            data-aos="fade-left"
             
         data-aos-duration="3000"/>
           </div>
