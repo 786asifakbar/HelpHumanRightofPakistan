@@ -9,37 +9,40 @@ const members = [
        
     id: 1,
     name: 'Ghulam Mehmood',
-    designation: 'Center Executive Community Member',
+    designation: 'Chairman ',
     community: 'Center Executive',
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
   },
   {
        
     id: 2,
-    name: 'Ghulam Mehmood',
-    designation: 'Center Executive Community Member',
+    name: 'Allama Mohammad Tahir ',
+    designation: 'President',
     community: 'Center Executive',
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
   },
   {
        
     id: 3,
-    name: 'Ghulam Mehmood',
-    designation: 'Center Executive Community Member',
-    community: 'Center Executive',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
-  },
-  {
-       
-    id: 4,
-    name: 'Ghulam Mehmood',
-    designation: 'Center Executive Community Member',
+    name: 'Umair Paracha ',
+    designation: 'General Security',
     community: 'Center Executive',
     image: 'https://via.placeholder.com/150', // Replace with actual image URL
   },
   
+  {
+       
+    id: 4,
+    name: 'Saifullah Paracha ',
+    designation: 'Joined Security',
+    community: 'Center Executive',
+    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+  },
+   
 ];
 
+
+// cc member 1 Voice Chairman  Umair Paracha 2 Finence community Mrs Sumaira Mehmood 3 Fatima Mehmood office security 5   
 
 
 

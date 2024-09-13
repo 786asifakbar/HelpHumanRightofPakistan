@@ -1,84 +1,108 @@
-import { useForm } from 'react-hook-form';
-import { TextField, Button, Typography, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { useState } from 'react';
+import { TextField, Checkbox, FormControlLabel, FormGroup, Button } from '@mui/material';
 
 const JobSeekerForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const [selectedFile, setSelectedFile] = useState(null);
 
-  const onSubmit = (data) => {
-    console.log('Job Seeker Form Data:', data);
+  // Handler for file input
+  const handleFileChange = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
+
+  // Form submission handler
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Here, handle form submission logic (e.g., send data to the server)
+    console.log('Form submitted:', selectedFile);
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md">
-      <Typography variant="h5" className="font-bold mb-5">Job Seeker Form</Typography>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-4">
-          <TextField
-            label="Full Name"
-            variant="outlined"
-            fullWidth
-            {...register('fullName', { required: 'Full Name is required' })}
-            error={!!errors.fullName}
-            helperText={errors.fullName?.message}
+    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <h1 className="text-3xl font-bold mb-4">Job Seeker Application Form</h1>
+
+      <form onSubmit={handleSubmit}>
+        {/* Position and Employment Type */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <TextField label="Position Applying For" variant="outlined" fullWidth required />
+          <div className="flex flex-col">
+            <label className="mb-2">Employment Type</label>
+            <FormGroup row>
+              <FormControlLabel control={<Checkbox />} label="Full-Time" />
+              <FormControlLabel control={<Checkbox />} label="Part-Time" />
+              <FormControlLabel control={<Checkbox />} label="Contract" />
+            </FormGroup>
+          </div>
+        </div>
+
+        {/* Personal Information */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <TextField label="Full Name" variant="outlined" fullWidth required />
+          <TextField label="Nationality" variant="outlined" fullWidth required />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <TextField label="Address" variant="outlined" fullWidth required />
+          <TextField label="Date of Birth" type="date" InputLabelProps={{ shrink: true }} variant="outlined" fullWidth required />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <TextField label="Phone" variant="outlined" fullWidth required />
+          <TextField label="Email" type="email" variant="outlined" fullWidth required />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <FormControlLabel control={<Checkbox />} label="Driving License" />
+          <TextField label="Years of Work Experience" variant="outlined" fullWidth />
+        </div>
+
+        {/* Upload CV */}
+        <div className="mb-6">
+          <h2 className="text-xl font-semibold mb-2">Upload Your CV</h2>
+          <input 
+            type="file" 
+            accept=".pdf,.doc,.docx" 
+            onChange={handleFileChange} 
+            className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+            required
           />
+          {selectedFile && <p className="mt-2 text-sm text-gray-600">Selected file: {selectedFile.name}</p>}
         </div>
-        <div className="mb-4">
-          <TextField
-            label="Email"
-            variant="outlined"
-            type="email"
-            fullWidth
-            {...register('email', { required: 'Email is required' })}
-            error={!!errors.email}
-            helperText={errors.email?.message}
-          />
+
+        {/* Educational Background */}
+        <div className="mb-6">
+          <h2 className="text-xl font-semibold mb-2">Educational Background</h2>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-4">
+            <TextField label="Degree/Course" variant="outlined" fullWidth />
+            <TextField label="University/Institute" variant="outlined" fullWidth />
+            <TextField label="Year of Graduation" variant="outlined" fullWidth />
+            <TextField label="Grade" variant="outlined" fullWidth />
+            <TextField label="City" variant="outlined" fullWidth />
+          </div>
         </div>
-        <div className="mb-4">
-          <TextField
-            label="Phone Number"
-            variant="outlined"
-            type="tel"
-            fullWidth
-            {...register('phoneNumber', { required: 'Phone Number is required' })}
-            error={!!errors.phoneNumber}
-            helperText={errors.phoneNumber?.message}
-          />
+
+        {/* Employment History */}
+        <div className="mb-6">
+          <h2 className="text-xl font-semibold mb-2">Employment History</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+            <TextField label="Company" variant="outlined" fullWidth />
+            <TextField label="Position" variant="outlined" fullWidth />
+            <TextField label="Year" variant="outlined" fullWidth />
+            <TextField label="Reason for Leaving" variant="outlined" fullWidth />
+          </div>
         </div>
-        <div className="mb-4">
-          <FormControl fullWidth>
-            <InputLabel>Experience Level</InputLabel>
-            <Select
-              defaultValue=""
-              {...register('experienceLevel', { required: 'Experience Level is required' })}
-            >
-              <MenuItem value="Junior">Junior</MenuItem>
-              <MenuItem value="Mid-level">Mid-level</MenuItem>
-              <MenuItem value="Senior">Senior</MenuItem>
-            </Select>
-          </FormControl>
+
+        {/* Skills & Training */}
+        <div className="mb-6">
+          <h2 className="text-xl font-semibold mb-2">Skills & Training</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+            <TextField label="Skill/Training Achievement" variant="outlined" fullWidth />
+            <TextField label="Level" variant="outlined" fullWidth />
+            <TextField label="Year" variant="outlined" fullWidth />
+            <TextField label="Institute" variant="outlined" fullWidth />
+          </div>
         </div>
-        <div className="mb-4">
-          <TextField
-            label="Skills"
-            variant="outlined"
-            fullWidth
-            {...register('skills', { required: 'Skills are required' })}
-            error={!!errors.skills}
-            helperText={errors.skills?.message}
-          />
+
+        {/* Submit Button */}
+        <div className="flex justify-center">
+          <Button variant="contained" color="primary" type="submit">Submit Application</Button>
         </div>
-        <div className="mb-4">
-          <TextField
-            label="Upload Resume"
-            type="file"
-            fullWidth
-            InputLabelProps={{ shrink: true }}
-            {...register('resume', { required: 'Resume is required' })}
-            error={!!errors.resume}
-            helperText={errors.resume?.message}
-          />
-        </div>
-        <Button type="submit" variant="contained" color="primary" fullWidth>Submit</Button>
       </form>
     </div>
   );
