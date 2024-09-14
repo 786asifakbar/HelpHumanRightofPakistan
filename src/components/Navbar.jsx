@@ -69,7 +69,7 @@ const Navbar = () => {
                 <Link to="/contact" className="text-blue-600">Contact</Link>
               </MenuItem>
               <MenuItem onClick={handleMenuClose}>
-                <Link to="/DonatationForm" className="text-blue-600 bg-red-600">Donate Now</Link>
+                <Link to="/DonatationForm" className="text-blue-600">Donate Now</Link>
               </MenuItem>
             </Menu>
           </>
@@ -118,6 +118,12 @@ const Navbar = () => {
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
                   <Link to="HelpJobBank" className="text-blue-600">Help Job Bank</Link>
+                </MenuItem>
+                <MenuItem onClick={handleImpactClose}>
+                  <Link to="LegalAid" className="text-blue-600">Legal Aid </Link>
+                </MenuItem>
+                <MenuItem onClick={handleImpactClose}>
+                  <Link to="OldAgeHome" className="text-blue-600">Old Age Home </Link>
                 </MenuItem>
               </Menu>
             </div>
