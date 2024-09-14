@@ -9,7 +9,7 @@ const services = [
   { name: "Marriage Support", icon: "💍", link: "/ShadiMubark" },
   { name: "Free Education", icon: "📚", link: "/HelpEducation" },
   { name: "Legal Aid Support", icon: "⚖️", link: "/LegalAid" },
-  { name: "Ambulance Service", icon: "🚑", link: "/AmbulanceService" },
+  // { name: "Ambulance Service", icon: "🚑", link: "/AmbulanceService" },
 ];
 
 const HelpProjects = () => {

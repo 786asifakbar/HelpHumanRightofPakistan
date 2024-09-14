@@ -5,8 +5,8 @@ function ShadiMubark() {
   return (
     <>
 <PassPro 
-        backImgsrc="../../public/Web-Icon.png"
-        secImg="../../public/hall.jpg"
+        backImgsrc="/Web-Icon.png"
+        secImg="/hall.jpg"
         title="Married Cermony of Poor People"
         p={`Our program is committed to helping poor individuals overcome financial obstacles related to marriage.
               We provide essential support to ensure they can afford the costs associated with wedding ceremonies and

@@ -8,13 +8,13 @@ const Orphans = () => {
     return(
    <>
     <PassPro backImgsrc= "/Web-Icon.png "
-      secImg = "/Orphans.jpg"
+      secImg = "/orphan.jpg"
       title = "Orphans"
       p = "At Help human rights, we believe that access to justice is a fundamental right. Our Legal Aid services provide free and accessible legal assistance to individuals and families who cannot afford it. We understand that legal challenges can be daunting, especially for those already struggling with financial difficulties. That's why we offer support in various areas of law, including family law, housing disputes, employment rights, and more Our dedicated team of legal professionals and volunteers work tirelessly to guide clients through complex legal processes offering counsel and representation in both civil and criminal matters Whether it is helping a family secure housing rights assisting with immigration issues or advocating for workers rights we are committed to ensuring that everyone has the opportunity to seek and receive fair treatment under the law."
-      rep = "Addational" 
+      rep = "" 
    />
     
-<LeftPro imgsrc="/Orphans1.jpg"
+<LeftPro imgsrc="/orphan1.jpg"
   heading="Your Donations Help Us Create This Impact"
   pera="Donations to Help Human Rights make a significant impact on our Legal Aid services, 
   allowing us to provide essential legal support to those who cannot afford it.

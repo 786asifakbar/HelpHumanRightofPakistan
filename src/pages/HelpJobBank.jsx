@@ -17,13 +17,13 @@ const HelpJobBank = () => {
       {!showForm && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-2xl transition duration-300"
+            className="bg-red-500 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-2xl transition duration-300"
             onClick={() => handleButtonClick('jobseeker')}
           >
             Job Seeker
           </button>
           <button
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-2xl transition duration-300"
+            className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-4 px-8 rounded-lg text-2xl transition duration-300"
             onClick={() => handleButtonClick('hiring')}
           >
             Hiring

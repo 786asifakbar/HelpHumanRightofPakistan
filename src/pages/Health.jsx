@@ -5,8 +5,8 @@ const Health = () => {
   return (
     <>
       <PassPro 
-        backImgsrc="../../public/Web-Icon.png"
-        secImg="../../public/health4.jpg"
+        backImgsrc="/Web-Icon.png"
+        secImg="/health4.jpg"
         title="Care Your Health"
         p={`At Help Human Rights, we are committed to providing essential healthcare services to underserved communities. 
            Our Healthcare Support program focuses on delivering comprehensive medical care to individuals who lack access to basic health services. 

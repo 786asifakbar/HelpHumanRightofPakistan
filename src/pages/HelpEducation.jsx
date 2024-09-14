@@ -6,8 +6,8 @@ const HelpEducation = () => {
     <>
 
     <PassPro 
-        backImgsrc="../../public/Web-Icon.png"
-        secImg="../../public/education.jpg"
+        backImgsrc="/Web-Icon.png"
+        secImg="/education.jpg"
         title="Free Education for All"
         p={`Help Human Rights Organization is dedicated to promoting human rights through the power of education. We believe that education is a fundamental right and a crucial tool for empowering individuals and communities. Our mission is to provide free, high-quality educational resources and opportunities to everyone, regardless of their socio-economic status.
          Free Educational Programs

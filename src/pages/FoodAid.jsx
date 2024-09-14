@@ -7,8 +7,8 @@ const FoodAid = () => {
 
     return(
    <>
-    <PassPro backImgsrc = "../../public/Web-Icon.png "
-      secImg = "../../public/food.jpg"
+    <PassPro backImgsrc = "/Web-Icon.png "
+      secImg = "/food.jpg"
       title = "Food Distribute"
       p = "Food Aid At Help Human rights, we believe that access to nutritious food is a fundamental human right. Our Food Aid program is dedicated to combating hunger and food insecurity within
        our community. We provide essential meals and groceries to individuals and families in need, 
@@ -22,7 +22,7 @@ const FoodAid = () => {
     />
     
 
-      <LeftPro imgsrc ="../../public/food4.jpg"
+      <LeftPro imgsrc ="/food4.jpg"
       heading = "Your Donations Help Us Create This Impact"
        pera ="Donations are the lifeline of our Food Aid program. Every contribution helps us purchase
        food supplies, expand our reach, and improve the quality of our services. 
