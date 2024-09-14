@@ -5,8 +5,8 @@ const WaterPlant = () => {
   return (
     <>
       <PassPro 
-        backImgsrc="../../public/Web-Icon.png"
-        secImg="../../public/waterplant1.jpeg"
+        backImgsrc="/Web-Icon.png"
+        secImg="/waterplant1.jpeg"
         title="Water Plant"
         p={`A water treatment plant is a facility that processes raw water to make it safe for human consumption,
            industrial use, and environmental discharge. The main stages in water treatment include coagulation 

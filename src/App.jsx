@@ -16,8 +16,9 @@ import HelpJobBank from './pages/HelpJobBank'
 import LegalAid from './pages/LegalAid'
 import OldAgeHome from './pages/OldAgeHome'
 import 'react-toastify/dist/ReactToastify.css';
-
 import Footer from './components/Footer';
+import ChildrenHospital from './pages/ChildrenHospital';
+import Orphans from './pages/Orphans'
 
 const App = () => {
   return (
@@ -35,6 +36,8 @@ const App = () => {
           <Route path="/HelpJobBank" element={<HelpJobBank/>} />
           <Route path="/LegalAid" element={<LegalAid/>} />
           <Route path="/OldAgeHome" element={<OldAgeHome/>} />
+          <Route path="/ChildrenHospital" element={<ChildrenHospital/>} />
+          <Route path="/Orphans" element={<Orphans/>} />
           
           <Route path="/DonationForm" element={<DonationForm />} />
           <Route path="/OurMember" element={<OurMember />} />

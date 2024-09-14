@@ -114,6 +114,9 @@ const Navbar = () => {
                   <Link to="WaterPlant" className="text-blue-600">Water Plant</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
+                  <Link to="ChildrenHospital"className="text-blue-600"> Children Hospital </Link>
+                </MenuItem>
+                <MenuItem onClick={handleImpactClose}>
                   <Link to="MedicineCharity" className="text-blue-600">Medicine Charity</Link>
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
@@ -124,6 +127,9 @@ const Navbar = () => {
                 </MenuItem>
                 <MenuItem onClick={handleImpactClose}>
                   <Link to="OldAgeHome" className="text-blue-600">Old Age Home </Link>
+                </MenuItem>
+                <MenuItem onClick={handleImpactClose}>
+                  <Link to="Orphans" className="text-blue-600"> Orphans </Link>
                 </MenuItem>
               </Menu>
             </div>
