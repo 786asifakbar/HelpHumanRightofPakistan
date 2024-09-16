@@ -93,6 +93,7 @@ const DonationForm = () => {
               onChange={(e) => setSelectedCurrency(e.target.value)}
               {...register('currency', { required: 'Currency is required' })}
             >
+            <MenuItem value="PKR">PKR</MenuItem>
               <MenuItem value="USD">USD</MenuItem>
               <MenuItem value="EUR">EUR</MenuItem>
               <MenuItem value="GBP">GBP</MenuItem>

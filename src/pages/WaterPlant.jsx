@@ -22,22 +22,14 @@ const WaterPlant = () => {
       />
     
       <LeftPro 
-        imgsrc="../../public/waterplant.jpeg"
+        imgsrc="/waterplant.jpeg"
         heading="Your Donations Help Us Create This Impact"
         pera={`Investment in Water Treatment Plants
-               Investment in water treatment plants can vary widely depending on the size of the plant, the scope of the necessary upgrades, and the specific technologies implemented. Generally, investments cover:
-
-               Infrastructure: Construction of new facilities or expansion of existing ones.
-               Technology: Implementation of advanced treatment technologies, automation systems, and monitoring equipment.
-               Training: Development programs for staff to ensure proper operation and maintenance of the plant.
-               Compliance: Measures to meet regulatory requirements and improve environmental sustainability.
-
-               Typical Investment Costs:
-               Small to medium-sized plants might require investments ranging from a few million to tens of millions of dollars.
+               Investment in water treatment plants can vary widely depending on the size of the plant, the scope of the necessary upgrades, and the specific technologies implemented. Generally, investments cover
+               Infrastructure: Construction of new facilities or expansion of existing ones.Technology: Implementation of advanced treatment technologies, automation systems, and monitoring equipment.Training: Development programs for staff to ensure proper operation and maintenance of the plant. Compliance: Measures to meet regulatory requirements and improve environmental sustainability
+               Typical Investment Costs: Small to medium-sized plants might require investments ranging from a few million to tens of millions of dollars.
                Large-scale plants, especially those serving major urban areas or requiring significant technological upgrades, can see investments in the hundreds of millions or even billions of dollars.
-               
-               Example Projects
-               Flint, Michigan Water Crisis: Addressing the water crisis in Flint involved significant investments in replacing lead pipes, upgrading the water treatment plant, and ensuring long-term water quality. This project required hundreds of millions of dollars in state and federal funding.`}
+              `}
       />
     </>
   );

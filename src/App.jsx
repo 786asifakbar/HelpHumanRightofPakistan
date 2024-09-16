@@ -12,7 +12,6 @@ import WaterPlant from './pages/WaterPlant'
 import MedicineCharity from './pages/MedicineCharity';
 import DonationForm from './pages/DonationForm';
 import HelpJobBank from './pages/HelpJobBank'
-// import { ToastContainer } from 'react-toastify';
 import LegalAid from './pages/LegalAid'
 import OldAgeHome from './pages/OldAgeHome'
 import 'react-toastify/dist/ReactToastify.css';
@@ -38,7 +37,6 @@ const App = () => {
           <Route path="/OldAgeHome" element={<OldAgeHome/>} />
           <Route path="/ChildrenHospital" element={<ChildrenHospital/>} />
           <Route path="/Orphans" element={<Orphans/>} />
-          
           <Route path="/DonationForm" element={<DonationForm />} />
           <Route path="/OurMember" element={<OurMember />} />
           <Route path="/Contact" element={<Contact />} />

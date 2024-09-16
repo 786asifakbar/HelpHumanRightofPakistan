@@ -1,7 +1,6 @@
 import { Container, Typography, Box } from '@mui/material';
-import AboutImage from '../../public/bg1.jpg'; // Replace with your image path
-import AboutImg2 from '../../public/bg2.jpg';
-import AboutImg from '../../public/bg3.jpg';
+import AboutImg2 from '/bg2.jpg';
+import AboutImg from '/bg3.jpg';
 import PassPro from './PassPro';
 
 
@@ -12,10 +11,7 @@ const About = () => {
 <PassPro backImgsrc= "/Web-Icon.png "
       secImg = "/bg1.jpg"
       title = "About Us "
-      p = "At Help Human Right Organization of Pakistan , we are committed to standing by human rights organizations as they tirelessly work to uphold justice, equality, and dignity for all. We understand 
-          the challenges they face, and that ’ s why we provide comprehensive support to ensure their voices are heard and their missions are fulfilled.
-          Through logistical, financial, and emotional support, we empower these organizations to remain focused on their critical advocacy for human rights. Whether organizing grassroots campaigns, offering legal assistance, or providing emotional care to activists, we ensure that these defenders of justice can continue their invaluable work without hindrance.
-          Together, we strive for a world where equality prevails and every individual’s rights are protected. Our support is a testament to our belief that everyone deserves to live free from oppression and discrimination."
+      p = "At Help Human Right Organization of Pakistan , we are committed to standing by human rights organizations as they tirelessly work to uphold justice, equality, and dignity for all. We understand the challenges they face, and that ’ s why we provide comprehensive support to ensure their voices are heard and their missions are fulfilled.Through logistical, financial, and emotional support, we empower these organizations to remain focused on their critical advocacy for human rights. Whether organizing grassroots campaigns, offering legal assistance, or providing emotional care to activists, we ensure that these defenders of justice can continue their invaluable work without hindrance.Together, we strive for a world where equality prevails and every individual’s rights are protected. Our support is a testament to our belief that everyone deserves to live free from oppression and discrimination."
       rep = "" 
    />
     <Container maxWidth="lg" className="">
@@ -57,16 +53,7 @@ const About = () => {
           Creating a Better Future Together
           </Typography>
           <Typography variant="body1" className="text-gray-700">
-           we believe that building a better future starts with standing
-           up for human rights. By supporting those who champion equality, justice, and dignity,
-           we can create lasting change in the world.
-           Every action counts—whether it’s through volunteering, making donations,
-           or forming partnerships, your contribution plays a vital role in 
-           helping human rights organizations continue their critical work.
-           Together, we have the power to uplift communities, protect the vulnerable,
-           and ensure that everyones rights are respected and upheld.
-           Join us in making a difference. Let s build a brighter, more just future, 
-           one step at a time.
+           we believe that building a better future starts with standing up for human rights. By supporting those who champion equality, justice, and dignity,we can create lasting change in the world.Every action counts—whether it’s through volunteering, making donations,or forming partnerships, your contribution plays a vital role in helping human rights organizations continue their critical work.Together, we have the power to uplift communities, protect the vulnerable,and ensure that everyones rights are respected and upheld.Join us in making a difference. Let s build a brighter, more just future,one step at a time.
           </Typography>
         </Box>
 
