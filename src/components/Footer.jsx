@@ -1,5 +1,5 @@
 import { Typography, IconButton } from '@mui/material';
-import { Facebook, YouTube, Instagram, LinkedIn, Mail, Phone } from '@mui/icons-material';
+import { YouTube , Instagram, LinkedIn, Mail, Phone } from '@mui/icons-material';
 
 const Footer = () => {
   return (
@@ -53,15 +53,7 @@ const Footer = () => {
               <Typography variant="body2">+92 333 508 1913</Typography>
             </a>
           </div>
-          <div className="flex space-x-4 mt-4">
-            <a href="https://www.facebook.com/profile.php?id=61558394109139" 
-            target="_blank" 
-            rel="noopener noreferrer">
-              <IconButton aria-label="Facebook"
-              className="text-white">
-                <Facebook />
-              </IconButton>
-            </a>
+           <div className="flex space-x-4 mt-4">
             <a href="https://www.youtube.com/@helphumanrights" target="_blank" rel="noopener noreferrer">
               <IconButton aria-label="Youtube" className="text-white">
                 <YouTube />
