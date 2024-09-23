@@ -23,5 +23,4 @@ function ShadiMubark() {
     </>
   );
 }
-
 export default ShadiMubark;
