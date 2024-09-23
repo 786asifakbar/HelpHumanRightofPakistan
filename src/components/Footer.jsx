@@ -54,8 +54,11 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex space-x-4 mt-4">
-            <a href="https://www.facebook.com/profile.php?id=61558394109139" target="_blank" rel="noopener noreferrer">
-              <IconButton aria-label="Facebook" className="text-white">
+            <a href="https://www.facebook.com/profile.php?id=61558394109139" 
+            target="_blank" 
+            rel="noopener noreferrer">
+              <IconButton aria-label="Facebook"
+              className="text-white">
                 <Facebook />
               </IconButton>
             </a>

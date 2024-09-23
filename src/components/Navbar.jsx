@@ -198,7 +198,7 @@ const Navbar = () => {
             </Button>
             <Button
               // variant="contained"
-              className="bg-green-600 text-white shadow-lg shadow-slate-600 py-8 border-y-8 border-double">
+              className="bg-red-600 text-white shadow-lg shadow-slate-600 py-8 border-y-8 border-double">
               <Link to="/DonationForm" className="text-white">Donate Now</Link>
             </Button>
           </div>

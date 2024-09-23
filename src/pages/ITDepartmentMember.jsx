@@ -10,28 +10,28 @@ const members = [
     name: 'Asif Akbar',
     designation: 'MERN Stack Developer',
     community: 'IT Department',
-    image: '../../public/asif.jpg', // Replace with actual image URL
+    image: '/asif.jpg', // Replace with actual image URL
   },
   {
     id: 2,
     name: 'Asif Akbar',
     designation: 'MERN Stack Developer',
     community: 'IT Department',
-    image: '../../public/asif.jpg', // Replace with actual image URL
+    image: '', // Replace with actual image URL
   },
   {
     id: 3,
     name: 'Asif Akbar',
     designation: 'MERN Stack Developer',
     community: 'IT Department',
-    image: '../../public/asif.jpg', // Replace with actual image URL
+    image: '', // Replace with actual image URL
   },
   {
     id: 4,
     name: 'Asif Akbar',
     designation: 'MERN Stack Developer',
     community: 'IT Department',
-    image: '../../public/asif.jpg', // Replace with actual image URL
+    image: '', // Replace with actual image URL
   },
 ];
 

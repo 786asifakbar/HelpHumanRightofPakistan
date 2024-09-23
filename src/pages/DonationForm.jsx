@@ -6,8 +6,6 @@ import {
 } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';  // for notifications (install with `npm install react-toastify`)
-
-
 // Add react-toastify CSS
 import 'react-toastify/dist/ReactToastify.css';
 
