@@ -1,5 +1,5 @@
-import { Typography, IconButton } from '@mui/material';
-import { YouTube , Instagram, LinkedIn, Mail, Phone } from '@mui/icons-material';
+import {Typography, IconButton } from '@mui/material';
+import {YouTube , Instagram, LinkedIn, Mail, Phone } from '@mui/icons-material';
 
 const Footer = () => {
   return (
@@ -14,7 +14,6 @@ const Footer = () => {
             We are dedicated to supporting human rights organizations worldwide. By offering logistical, financial, and emotional support, we help these organizations continue their work in advocating for equality and justice.
           </Typography>
         </div>
-
         {/* Quick Links Section */}
         <div className="flex flex-col">
           <Typography variant="h6" className="mb-4 font-bold">
@@ -35,7 +34,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-
         {/* Contact Section */}
         <div className="flex flex-col">
           <Typography variant="h6" className="mb-4 font-bold">
@@ -72,7 +70,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       {/* Footer Bottom */}
       <div className="border-t border-white mt-10 pt-5 text-center">
         <Typography variant="body2" className="text-gray-400">
@@ -82,5 +79,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

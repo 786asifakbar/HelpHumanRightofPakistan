@@ -5,20 +5,19 @@ import {
   DialogActions, DialogContent, DialogContentText, DialogTitle
 } from '@mui/material';
 import { useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';  // for notifications (install with `npm install react-toastify`)
-// Add react-toastify CSS
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const DonationForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const [selectedAmount, setSelectedAmount] = useState('');
-  const [selectedCurrency, setSelectedCurrency] = useState('USD');
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState(null);
 
   // Open confirmation dialog
   const openConfirmationDialog = (data) => {
-    setFormData(data);  // Store form data for final submission
+    // Ensure the selected payment method is passed to formData
+    setFormData({ ...data, paymentMethod: selectedPaymentMethod });
     setIsModalOpen(true);
   };
 
@@ -27,18 +26,16 @@ const DonationForm = () => {
     setIsModalOpen(false);
   };
 
-  // Final submission to process the donation
+  // Process donation logic
   const confirmDonation = () => {
-    // Process donation (e.g., send to API)
+    // Simulate processing the donation
     console.log('Donation processed:', formData);
 
     // Notify the user
-    toast.success(`Thank you, ${formData.name}! Your donation of ${formData.amount} ${formData.currency} has been processed.`);
-    
+    toast.success(`Thank you, ${formData.name}! Your donation of $${formData.amount} via ${formData.paymentMethod} has been processed.`);
+
     // Close modal
     setIsModalOpen(false);
-
-    // Reset form (you may reset the form fields here)
   };
 
   return (
@@ -78,25 +75,7 @@ const DonationForm = () => {
             {...register('amount', { required: 'Amount is required' })}
             error={!!errors.amount}
             helperText={errors.amount?.message}
-            value={selectedAmount}
-            onChange={(e) => setSelectedAmount(e.target.value)}
           />
-        </div>
-        <div className="mb-4">
-          <FormControl fullWidth>
-            <InputLabel>Currency</InputLabel>
-            <Select
-              value={selectedCurrency}
-              onChange={(e) => setSelectedCurrency(e.target.value)}
-              {...register('currency', { required: 'Currency is required' })}
-            >
-            <MenuItem value="PKR">PKR</MenuItem>
-              <MenuItem value="USD">USD</MenuItem>
-              <MenuItem value="EUR">EUR</MenuItem>
-              <MenuItem value="GBP">GBP</MenuItem>
-            </Select>
-            <FormHelperText>Select your preferred currency</FormHelperText>
-          </FormControl>
         </div>
         <div className="mb-4">
           <FormControl fullWidth>
@@ -104,11 +83,12 @@ const DonationForm = () => {
             <Select
               value={selectedPaymentMethod}
               onChange={(e) => setSelectedPaymentMethod(e.target.value)}
-              {...register('paymentMethod', { required: 'Payment Method is required' })}
+              {...register('paymentMethod', { required: 'Payment method is required' })}
+              error={!!errors.paymentMethod}
             >
-              <MenuItem value="Credit Card">Credit Card</MenuItem>
-              <MenuItem value="PayPal">PayPal</MenuItem>
               <MenuItem value="Bank Transfer">Bank Transfer</MenuItem>
+              <MenuItem value="JazzCash">JazzCash</MenuItem>
+              {/* Add more payment options as needed */}
             </Select>
             <FormHelperText>Select your preferred payment method</FormHelperText>
           </FormControl>
@@ -130,7 +110,13 @@ const DonationForm = () => {
         <DialogTitle>Confirm Your Donation</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Please confirm your donation of {formData?.amount} {formData?.currency} using {selectedPaymentMethod}.
+            You are about to donate ${formData?.amount} using {formData?.paymentMethod}.
+            <br />
+            Name: {formData?.name}
+            <br />
+            Email: {formData?.email}
+            <br />
+            Payment Method: {formData?.paymentMethod}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
