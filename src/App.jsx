@@ -21,7 +21,7 @@ import Orphans from './pages/Orphans'
 
 const App = () => {
   return (
-    <> 
+    <>  
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -45,5 +45,4 @@ const App = () => {
     </>
   );
 }
-
 export default App;

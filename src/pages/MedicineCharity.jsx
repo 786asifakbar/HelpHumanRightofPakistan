@@ -3,7 +3,6 @@ import LeftPro from "./leftPro"; // Ensure correct case for file names
 
 
 const MedicineCharity = () => {
-
   return (
     <>
       <PassPro
@@ -21,5 +20,4 @@ const MedicineCharity = () => {
     </>
   );
 };
-
 export default MedicineCharity;

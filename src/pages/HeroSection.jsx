@@ -1,6 +1,5 @@
 // src/components/HeroSection.js
 import SuportPage from './SuportPage';
-
 const HeroSection = () => {
   return (
     <>
