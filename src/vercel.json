@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 {
     "REWRITES":[
         {"SOURCE" :"/(.*)", "DESTINATION":"/"}
     ]
 }
+=======
+
+>>>>>>> 098f22896317e57e64c27d2d477a84aed464a729
